@@ -1,0 +1,359 @@
+.login_form {
+  border: 3px solid #f1f1f1;
+  width: 50%;
+  margin-left: 25%;
+  background: #E4E9F7;
+}
+
+/* Fprce username to lowercase -- display only!!  Do this on server side as well */ 
+.login_form input[type="text"] {
+    text-transform: lowercase;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password], input[type="number"], select {
+  width: 100%;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input:required:disabled,
+select:required:disabled,
+input:required:valid,
+select:required:valid {border: 1px solid #ccc;}
+
+input:required,
+select:required { border: 1px solid green; }
+
+input[name="uname"], input[name="psw"] {
+  margin: 8px 0;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  caret-color: rgba(0,0,0,0);
+}
+
+/* Avatar image */
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  margin-bottom: 15px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+}
+
+/*message for user*/
+.msg{
+	border: 1px solid #11101d;
+	background-color: #11101d;
+    color: #fff;
+    border-radius: 5px;
+    padding-inline: 10px;
+    padding-block: 2px;
+}
+
+/* convert to grab on labels*/
+label, div, h1, h3, p, span, i, table legend {
+  caret-color: rgba(0,0,0,0);
+}
+
+.alertdiv{
+	display: flex;
+    justify-content: center;
+}
+
+input{
+	caret-color: auto;
+}
+
+/* table style modifications*/
+/* search filter positioning and style*/
+.tab_top{
+	display: flex;
+	align-items: center;
+	background-color: #f1f1f1;
+	padding-inline: 5px;
+}
+
+.dataTables_filter label{
+	margin-top: 0.5rem;
+	font-weight: bold!important;
+}
+
+/* add/edit buttons style*/
+.controls{
+	margin-inline: 20px;
+}
+
+.control_group button{
+    border-radius: 5px;
+    padding-inline: 10px;
+	display: flex;
+    align-items: center;
+	font-weight: bold;
+	border: 1px solid;
+	box-shadow: 2px 2px #80bdff;
+	background-color: #fff;
+}
+
+.control_group button:hover{
+	background-color: #80bdff;
+}
+
+.control_group button i{
+	padding-inline-end: 5px;
+}
+
+/* tabledata export buttons*/
+.dt-buttons {	
+	margin-left: auto;
+	order: 2;
+	font-size: smaller;
+}
+
+.dt_buttons {
+    border: none;
+	padding-inline: 2px;
+}
+
+.dt_icons{
+	color: #11101D;
+}
+
+.dt_links{
+	color: #007bff;
+    text-decoration: underline;	
+}
+
+/*table footer*/
+.tab_foot{
+	display: flex;
+	justify-content: space-between;
+}
+
+.unfocus {
+  pointer-events: none;
+}
+
+form {
+  border: 3px solid #f1f1f1;
+  background: #E4E9F7;
+}
+
+.all_caps {
+	text-transform: uppercase
+}
+
+.modal{
+	top: 40px;
+}
+
+.modal-content {
+  border: 1px solid #f1f1f1;
+}
+
+.modal-header{
+	background-color: #11101D;
+    color: #fff;
+}
+
+.modal-header button{
+	color: #fff;
+}
+
+.modal-body{
+	padding:0.5px;
+	overflow-y: auto;
+    max-height: calc(100vh - 210px);
+}
+
+.modal-body form label{
+	margin-top:8px;
+	margin-bottom: 2px;
+}
+
+.modalrow{
+	display: flex;
+	margin-inline: 5px;
+}
+
+.modalrow_single{
+	display: flex;	
+    flex-direction: column;
+	margin-inline: 5px;	
+}
+
+.modaldiv{
+	width: 2%;
+}
+
+.modalcell{
+	width: 49%;
+}
+
+.modal-body form legend{
+	font-size: 1rem;
+	font-weight: bolder;
+}
+
+.modal-footer{
+	background-color: #1d1b31;
+    color: #fff;
+}
+
+.fullPage select, 
+.fullPage input[type="text"],
+.fullPage input[type="number"] {
+  padding: 6px 10px;
+}
+
+.fullPage input[type="date"] {
+  padding: 4px 10px;
+  width: 100%;
+}
+
+.fullPage label,
+.fullPage legend,
+.billItems th {
+	font-size: 1rem;
+	font-weight: bolder;
+	margin: 10px 1px 1px 1px;
+}
+
+.pagecell{	
+	width: 49%;
+}
+
+.pagerow_sigle{
+	display: flex;	
+    flex-direction: column;
+	margin-inline: 5px;		
+}
+
+.billtop{
+	display: flex;
+}
+
+.billNo{
+	border: 3px solid #f1f1f1;
+	background: #E4E9F7;	
+}
+
+.billleft{
+	width: 48%;
+}
+
+.pagediv{
+	width: 4%
+}
+
+.billright{
+	width: 48%;
+}
+
+.billItems table{
+	width: 100%;
+    border-spacing: 5px 10px;
+    border-collapse: separate;
+	text-align: center;
+}
+
+.pTabCell{
+	width:100%;
+}
+
+.pTabBtCell{
+	width:70%;	
+}
+
+.inline-flex{
+	display: flex;
+	margin-inline: 5px;
+}
+
+.shrtBt{
+    border-radius: 1px;
+    padding-inline: 5px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    border: 1px solid;
+    box-shadow: 1px 1px #80bdff;
+    background-color: #fff;
+}
+
+.last{
+	text-align: right;
+}
+
+.txt_large{
+	font-size: 1.5rem;
+}
+
+.date_range label{
+	margin-top:8px;
+}
+
+.date_range button{
+    border-radius: 5px;
+    padding-inline: 10px;
+    align-items: center;
+	font-weight: bold;
+	border: 1px solid;
+	box-shadow: 2px 2px #80bdff;
+	background-color: #fff;
+}
+
+.date_range{
+	background-color: #f1f1f1;
+}
+
+.page_feild{
+	width: 50%;
+	height: 80%;
+}
+
+.rowBt,
+.bt_remove{
+	margin: 5px;
+    border-radius: 5px;
+    padding-inline: 10px;
+	display: flex;
+    align-items: center;
+	font-weight: bold;
+	border: 1px solid;
+	box-shadow: 2px 2px #80bdff;
+	background-color: #fff;	
+}
+
+.fullPageFrmBt {
+	text-align: end;
+	width:100%;
+	border: 3px solid #f1f1f1;
+	background: #E4E9F7;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 600px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  
+  .modal{
+	  top: 0px;
+  }
+}

@@ -1,0 +1,154 @@
+html{
+	font-size: 10px;
+}
+
+.fonfam{
+	font-family: monospace;
+}
+
+.print_view{	
+	display: flex;
+	padding: 0mm 0mm 1mm 0mm;
+}
+
+.print_section{
+	padding: 1mm 1mm 1mm 1mm;
+	border: 0.2mm solid #9a9a9a;
+	margin: 0.5mm;
+	height: 141mm;
+	width: 99mm
+}
+.compact{
+	width: 205mm;
+	padding: 1mm 1mm 1mm 1mm ;
+	margin: auto;	
+	height: 290mm;
+	border: 0.8mm solid #9a9a9a;
+}
+
+.float_centre{
+	text-align: center;
+}
+
+.print_logo{
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+img{
+  height: 35px;
+  width: 35px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-right: 12px;
+}
+
+.print_row{
+	display: flex;
+	justify-content: space-between;
+}
+
+td{
+	text-align: center;
+}
+
+.first{
+	text-align: left;
+}
+
+.middle{
+	text-align: center;
+}
+
+.last{
+	text-align: right;
+}
+
+.bottom{  
+	display: inline-block;
+	align-self: flex-end;
+}
+
+.txt_heading{
+	font-size: 14px;
+	text-transform: uppercase
+}
+
+.txt_bold{
+	font-weight: bold;
+}
+
+.txt_small,
+.txt_small td{
+	font-size: 10px;
+}
+
+.txt_mini{
+	font-size: 6px;
+}
+
+hr{
+	margin-block: 0.5mm;
+}
+
+.on_hr{
+	margin-block-start: 0.5mm;
+}
+
+.on_txt{
+	margin-block-start: 0;	
+}
+
+.bill_content{
+	height:84mm;
+}
+
+.bill_items{
+	height:22mm;
+}
+
+.numeral{	
+	display: flex;
+    justify-content: flex-end;
+}
+
+.numeral p{
+	margin: 0;
+}
+
+.new{
+	margin-top: 2mm;
+}
+
+@page {
+	size: A4;
+	margin: 0;
+}
+
+@media print {
+	.print_view {
+		margin: 1mm;
+		padding-bottom: 4mm;
+		border: none;
+		height: 142mm;
+	}
+	
+	.compact{
+		margin: 0mm;
+		border: none;
+		padding: 0mm;
+		height: 290mm;
+	}
+	
+	.print_section{
+		padding: 1mm 1mm 1mm 1mm;
+		border: 0.2mm solid #9a9a9a;
+	}
+	
+	.new{
+		padding-top: 2mm;
+		display: block;
+		page-break-before: always;
+	}
+}

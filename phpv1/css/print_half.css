@@ -1,0 +1,143 @@
+html{
+	font-size: 12px;
+}
+
+.fonfam{
+	font-family: sans-serif;
+}
+
+.print_view{	
+	display: flex;
+	border: 0.8mm solid #9a9a9a;
+	width: 292mm;
+	height: 206mm;
+	padding: 2mm 1mm 2mm 1mm ;
+	margin: auto;
+}
+
+.print_section{
+	padding: 1mm 1mm 1mm 1mm;
+	border: 0.2mm solid #9a9a9a;
+	margin-left: 1mm;
+	margin-right: 1mm;
+	width: 50%;
+}
+
+.float_centre{
+	text-align: center;
+}
+
+.print_logo{
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+img{
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-right: 12px;
+}
+
+.print_row{
+	display: flex;
+	justify-content: space-between;
+}
+
+td{
+	text-align: center;
+}
+
+.first{
+	text-align: left;
+}
+
+.middle{
+	text-align: center;
+}
+
+.last{
+	text-align: right;
+}
+
+.bottom{  
+	display: inline-block;
+	align-self: flex-end;
+}
+
+.fixed_width{
+	width:18mm;
+}
+
+.txt_heading{
+	font-size: 18px;
+	text-transform: uppercase
+}
+
+.txt_bold{
+	font-weight: bold;
+}
+
+.txt_small,
+.txt_small td{
+	font-size: 11px;
+}
+
+.on_hr{
+	margin-block-start: 0.5rem;
+}
+
+.on_txt{
+	margin-block-start: 0;	
+}
+
+.bill_content{
+	/*height:70%;*/
+}
+
+.bill_items{
+	height:55mm;
+}
+
+.numeral{	
+	display: flex;
+    justify-content: flex-end;
+}
+
+.numeral p{
+	margin: 0;
+}
+
+.new{
+	margin-top: 2mm;
+}
+
+@page {
+	size: A4;
+	margin: 0;
+}
+
+@media print {
+	.print_view {
+		margin: 0mm;
+		padding: 0mm;
+		border: none;
+		width: 292mm;
+		height: 205mm;
+	}
+	
+	.print_section{
+		padding: 1mm 1mm 1mm 1mm;
+		border: 0.2mm solid #9a9a9a;
+	}
+	
+	.new{
+		padding-top: 2mm;
+		display: block;
+		page-break-before: always;
+	}
+	
+	@page {size: landscape}
+}

@@ -1,0 +1,14 @@
+# Disable directory listing
+Options -Indexes
+
+# Force utf-8 charset
+AddDefaultCharset UTF-8
+AddCharset UTF-8 .html .css .js .svg .woff .woff2
+
+# Security
+ServerSignature Off
+
+# Protect .htaccess file
+<Files .htaccess>
+    Require all denied
+</Files>

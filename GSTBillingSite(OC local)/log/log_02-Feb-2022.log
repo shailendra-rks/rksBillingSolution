@@ -1,0 +1,8 @@
+01:42:40|admin|control|Outlet address updated.|4|123|2|::1
+01:42:40|admin|control|Outlet updated.|4|147|2|::1
+03:27:09|admin|control|Logged Out Successfully.|13|7|0|::1
+03:27:19|user1@admin|user|Logged In.|12|55|0|::1
+03:45:14|user1@admin|user|Logged Out Successfully.|13|7|0|::1
+03:45:26|user1@admin|user|Logged In.|12|55|0|::1
+03:45:40|user1@admin|user|Logged Out Successfully.|13|7|0|::1
+03:45:45|admin|control|Logged In.|12|55|0|::1

@@ -1,0 +1,137 @@
+/*html{
+	height: 100%;
+}*/
+
+.fonfam{
+	font-family: sans-serif;
+}
+
+.print_view{	
+	border: 0.8mm solid #9a9a9a;
+	width: 200mm;
+	height: 292mm;
+	padding: 1mm 1mm 1mm 1mm ;
+	margin: auto;
+}
+.print_section{
+	padding: 1mm 1mm 1mm 1mm;
+	border: 0.2mm solid #9a9a9a;
+}
+
+.float_centre{
+	text-align: center;
+}
+
+.print_logo{
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+img{
+  height: 60px;
+  width: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-right: 15px;
+}
+
+.print_row{
+	display: flex;
+	justify-content: space-between;
+}
+
+td{
+	text-align: center;
+}
+
+.first{
+	text-align: left;
+}
+
+.middle{
+	text-align: center;
+}
+
+.last{
+	text-align: right;
+}
+
+.bottom{  
+	display: inline-block;
+	align-self: flex-end;
+}
+
+.fixed_width{
+	width:40mm;
+}
+
+.txt_heading{
+	font-size: 24px;
+	text-transform: uppercase
+}
+
+.txt_bold{
+	font-weight: bold;
+}
+
+.txt_small,
+.txt_small td{
+	font-size: 14px;
+}
+
+.on_hr{
+	margin-block-start: 0.5rem;
+}
+
+.on_txt{
+	margin-block-start: 0;	
+}
+
+.bill_content{
+	height:196mm;
+}
+
+.bill_items{
+	height:98mm;
+}
+
+.numeral{	
+	display: flex;
+    justify-content: flex-end;
+}
+
+.numeral p{
+	margin: 0;
+}
+
+.new{
+	margin-top: 2mm;
+}
+
+@page {
+	size: A4;
+	margin: 0;
+}
+
+@media print {
+	.print_view {
+		margin: 0mm;
+		padding: 0mm;
+		border: none;
+		width: 205mm;
+		height: 289mm;
+	}
+	
+	.print_section{
+		padding: 1mm 1mm 1mm 1mm;
+		border: 0.2mm solid #9a9a9a;
+	}
+	
+	.new{
+		padding-top: 2mm;
+		display: block;
+		page-break-before: always;
+	}
+	/*@page {size: landscape}*/
+}
